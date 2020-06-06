@@ -1,0 +1,38 @@
+.gallery {
+  color: #2c4058;
+  min-height: 700px;
+
+    &__line {
+        width: 100px;
+      height: 1px;
+      background-color: #2c4058;
+      margin: 140px auto 40px;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-size: 44px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+  &__btn {
+    text-transform: uppercase;
+		background: transparent;
+		outline: 1px solid #2c4058;
+		padding: 20px 40px;
+    cursor: pointer;
+    margin: 60px auto;
+
+    &:hover {
+      color: #55b7ff;
+      outline: 1px solid #55b7ff;
+      font-weight: 500;
+    }
+  }
+}
