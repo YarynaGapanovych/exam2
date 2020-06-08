@@ -1,0 +1,16 @@
+.footer {
+  background: url('../images/footer-bg.png') top center no-repeat;
+  min-height: 500px;
+  color: #fff;
+
+  &__block {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-end;
+    padding-top: 30%;
+  }
+
+  &__text {
+    display: flex;
+  }
+}
