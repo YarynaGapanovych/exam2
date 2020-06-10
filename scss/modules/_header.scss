@@ -1,18 +1,19 @@
 .header {
     background: url('../images/header-bg.png') top center no-repeat;
 		min-height: 800px;
-    // background-size: 100%;
+    background-size: cover;
 
 	&__capters {
 		vertical-align: middle;
 		text-transform: uppercase;
 		text-align: center;
 		color: #fff;
-    margin-top: 25%;
+    margin-top: 22%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 	}
 
 	&__title {
@@ -27,12 +28,10 @@
 
   &__arrow{
     text-align: center;
-    margin: 25% auto 0;
-    border: 1px solid #fff;
-    border-radius: 50%;
-    width: 42px;
+    margin: 225px auto 0;
+    // width: 42px;
     transition: .3s;
-      animation: scroll-arrow 1.5s ease-in-out infinite;
+    
 
     
     &-link {
@@ -40,16 +39,19 @@
       color: #ffffff;
       font-size: 35px;
       width: 40px;
-      padding: 0 10px;
+      padding: 17px 20px 0;
       position: relative;
-      
+      border: 1px solid #fff;
+      border-radius: 50%;
+      animation: scroll-arrow 1.5s ease-in-out infinite;
 
       &:hover{
-        color: blue;
+        color: tomato;
 
     }
     &:hover{
-    border: 1px solid blue;
+    border: 1px solid tomato;
+    border-radius: 50%;
     }
 
     
@@ -74,6 +76,12 @@
 		padding-top: 55px;
     display: flex;
     justify-content: space-between;
+
+  &__logo {
+    width: 100%;
+    max-height: 60px;
+    padding-right: 5%;
+  }
 }
 
 .nav-manu {
@@ -83,6 +91,16 @@
 
     &__item {
       position: relative;
+      margin: 0;
+      margin-right: 7%;
+
+      @media (max-width: 1200px) {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       &::before {
         width: 10px;
@@ -92,7 +110,8 @@
         border-radius: 50%;
         position: absolute;
         left: 0;
-        top: 2px;
+        top: 50%;
+        transform: translateY(-50%);
         content: '';
 
         
@@ -119,31 +138,20 @@
     
 
     &:hover {
-      color: blue;
+      // color: blue;
       // border-bottom: 1px solid #55b7ff;
       font-weight: 500;
     }
 	}
 }
 
+
+}
+
 .social {
-  display: flex;
 
-	&__list {
-
-	}
-
-	&__item {
-
-		&-link {
-      width: 10px;
-      height: 10px;
-		}
-
-		&-img {
-			width: 10px;
-		}
-	}
+  &__list 
+  {
+    margin-top: 15px;
+  }
 }
-}
-

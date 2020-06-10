@@ -1,16 +1,45 @@
 .footer {
   background: url('../images/footer-bg.png') top center no-repeat;
+	background-size: cover;
   min-height: 500px;
   color: #fff;
+  position: relative;
+
 
   &__block {
     // display: flex;
     // flex-direction: column;
     // align-items: flex-end;
-    padding-top: 30%;
+    padding-top: 200px;
+  }
+
+  &__logo {
+    margin-left: 14%;
   }
 
   &__text {
     display: flex;
+    margin-top: 45px;
+    margin-left: 15%;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copyright {
+
+  }
+
+  &__line {
+    padding: 0 20px;
+  }
+
+  &__author {
+
+  }
+
+  &__img {
+    width: 12px;
+    height: 12px;
   }
 }

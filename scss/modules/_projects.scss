@@ -65,7 +65,7 @@
 		cursor: pointer;
 
 		&:hover {
-      color: #55b7ff;
+      color: #7e5aff;
       outline: 1px solid #55b7ff;
       font-weight: 500;
     }
@@ -73,5 +73,19 @@
 
 	&__address {
 		margin-top: 60px;
+		padding-left: 20px;
+		font-style: oblique;
+		position: relative;
+
+		&::before {
+			content: '';
+			height: 15px;
+			width: 15px;
+			background: url(../images/addressMarker.svg) no-repeat center;
+			background-size: contain;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 }

@@ -1,3 +1,19 @@
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/gothambold/gothambold1.eot');
+	src: local('gothambold1'), url('../fonts/gothambold/gothambold1.woff') format('woff'), url('../fonts/gothambold/gothambold1.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham';
+	src: url('../fonts/GothamBook/GothamBook.eot');
+	src: local('GothamBook'), url('../fonts/GothamBook/GothamBook.woff') format('woff'), url('../fonts/GothamBook/GothamBook.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -19,6 +35,9 @@ html {
 body, html {
 	min-height: 100%;
 	width: 100%;
+	font-family: 'Gotham';
+	
+
 }
 
 .clear::after, .clear::before {
@@ -29,3 +48,6 @@ body, html {
 .clear::after {
 	clear: both;
 }
+
+
+ 

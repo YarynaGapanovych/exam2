@@ -1,15 +1,14 @@
-.wrapper {
-	position: relative;
-}
-
 .form {
 	color: #2c4058;
 	position: absolute;
-	top: 60%;
-    left: 15%;
-    width: 70%;
-		background: #ffffff;
-		padding: 60px 0 60px;
+	top: -60%;
+	left: 0;
+	right: 0;
+  margin: 0 auto;
+	width: 770px;
+	height: 450px;
+	background: #ffffff;
+	padding: 60px 0 60px;
 
 		&__content {
 			display: flex;
@@ -34,35 +33,96 @@
 
 		&__info {
 			font-size: 18px;
-			// margin-left: 15%;
+			margin-left: 30px;
 		}
 
 		&__item {
 			margin-bottom: 20px;
+			position: relative;
+			padding-left: 30px;
 
 			&-link {
 				color: #2c4058;
+				text-decoration: none;
+			}
 
+			&--address {
+
+
+				&::before {
+					content: '';
+					height: 15px;
+					width: 15px;
+					background: url(../images/blueMarker.svg) no-repeat center;
+					background-size: contain;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+
+			&--tel {
+				
+
+				&::before {
+					content: '';
+					height: 15px;
+					width: 15px;
+					background: url(../images/phone.svg) no-repeat center;
+					background-size: contain;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+
+			&--mail {
+				
+
+				&::before {
+					content: '';
+					height: 15px;
+					width: 15px;
+					background: url(../images/mail.svg) no-repeat center;
+					background-size: contain;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
+
+			&--time {
+				
+
+				&::before {
+					content: '';
+					height: 15px;
+					width: 15px;
+					background: url(../images/clock.svg) no-repeat center;
+					background-size: contain;
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
 			}
 		}
 
 	&__inputs {
-
+		// margin-left: -50px;
 	}
 
 	&__input {
 		color: #2c4058;
 		background: transparent;
-		text-transform: uppercase;
-		// outline: 1px solid #2c4058;
-		// padding: 20px 40px;
-		// cursor: pointer;
+		font-size: 18px;
 		border-bottom: 1px solid #2c4057cd;
 		margin-bottom: 20px;
-		padding: 10px 0;
+		padding: 10px 34px 10px 3px;
 
 		&:focus {
 			border-bottom: 1px solid #2c4058;
+			color: #2c4058;
+			
 		}
 	}
 
@@ -75,7 +135,7 @@
 		margin-top: 30px;
 
 		&:hover {
-      color: #55b7ff;
+      color: #7e5aff;
       outline: 1px solid #55b7ff;
       font-weight: 500;
     }
