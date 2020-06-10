@@ -267,13 +267,12 @@ $(document).ready(function () {
     dots: true,
   })
 
-  // let $page = $('html, body');
 
-  // let $page = $('html, body');
-  // $('a[href*="#"]').click(function () {
-  //     $page.animate({
-  //         scrollTop: $($.attr(this, 'href')).offset().top
-  //     }, 400);
-  //     return false;
-  // });
+  let $page = $('html, body');
+  $('a[href*="#"]').click(function () {
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+    }, 300);
+    return false;
+  });
 })
