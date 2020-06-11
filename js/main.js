@@ -258,6 +258,8 @@ function initMap() {
 }
 
 $(document).ready(function () {
+
+  // slider
   $('.slider__blocks').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -267,12 +269,17 @@ $(document).ready(function () {
     dots: true,
   })
 
-
+  // scroll
   let $page = $('html, body');
   $('a[href*="#"]').click(function () {
     $page.animate({
       scrollTop: $($.attr(this, 'href')).offset().top
-    }, 300);
+    }, 2000);
     return false;
   });
+
+  // burger
+  $('.navigation__burger').click(() => {
+    $('.navigation__burger, .nav-manu').toggleClass('active')
+  })
 })
