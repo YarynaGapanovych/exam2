@@ -267,6 +267,31 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     pauseOnHover: true,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 1010,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 540,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
   })
 
   // scroll

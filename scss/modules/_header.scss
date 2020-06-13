@@ -3,6 +3,11 @@
 		min-height: 800px;
     background-size: cover;
 
+    @media (max-width: 570px) {
+		  min-height: 700px;
+    }
+
+
 	&__capters {
 		vertical-align: middle;
 		text-transform: uppercase;
@@ -19,7 +24,12 @@
 	&__title {
 		font-size: 80px;
 		font-weight: 700;
-		margin-bottom: 40px;
+    margin-bottom: 40px;
+    
+    @media (min-width: 570), (max-width: 768px) {
+      font-size: 60px;
+      margin-top: 50px;
+    }
 	}
 
 	&__subtitle {
@@ -29,9 +39,11 @@
   &__arrow{
     text-align: center;
     margin: 225px auto 0;
-    // width: 42px;
     transition: .3s;
     
+    @media (max-width: 570px) {
+      margin-top: 130px;
+    }
 
     
     &-link {
@@ -76,6 +88,11 @@
 		padding-top: 55px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 570px) {
+      justify-content: space-around;
+    }
+
 
   &__logo {
     max-width: 240px;
@@ -234,6 +251,13 @@
 	}
 }
 
+  &__social {
+
+
+    @media (max-width: 570px) {
+      display: none;
+    }
+  }
 
 }
 

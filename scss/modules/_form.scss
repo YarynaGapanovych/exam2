@@ -150,6 +150,7 @@
 	@media (max-width: 768px) {
 		max-width: 440px;
 		min-height: 660px;
+		position: relative;
 
 		.form__content{
 			flex-direction: column;
@@ -163,20 +164,20 @@
 
 	}
 
-	@media (max-width: 440px) {
+	
+}
+
+@media (max-width: 440px) {
+	.form{
 		max-width: 100%;
 		min-height: 660px;
-
-		.form__content{
-			flex-direction: column;
-			padding: 0 33px;
-		}
-
-		.form__line--2{
-			display: block;
-			margin: 30px auto;
-		}
+		
 
 	}
+
+	.form__content{
+		padding: 0;
+	}
+
 }
 

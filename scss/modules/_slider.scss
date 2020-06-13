@@ -3,6 +3,10 @@
 	background-size: cover;
 	min-height: 1050px;
 
+	@media (max-width: 768px){
+			min-height: 880px;
+		}
+
   &__title {
 		text-align: center;
 		text-transform: uppercase;
@@ -10,6 +14,10 @@
 		font-weight: 500;
 		color: #ffffff;
 		padding: 180px 0 100px;
+
+		@media (max-width: 768px){
+		padding: 100px 0 60px;
+		}
 	}
 
 	&__blocks {

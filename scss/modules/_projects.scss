@@ -23,6 +23,13 @@
 
 	&__imgs {
 		position: relative;
+
+		&--2 {
+
+			@media (max-width: 768px) {
+				margin-top: 55px;
+			}
+		}
 	}
 
 	&__img1{
