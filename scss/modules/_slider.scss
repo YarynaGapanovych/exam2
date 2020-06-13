@@ -4,7 +4,7 @@
 	min-height: 1050px;
 
 	@media (max-width: 768px){
-			min-height: 880px;
+			min-height: 900px;
 		}
 
   &__title {
@@ -54,6 +54,14 @@
     min-height: 230px;
 		margin-top: 82%;
 		margin-bottom: 30px;
+
+		@media (max-width: 767px){
+			min-height: 270px;
+		}
+
+		@media (max-width: 539px){
+			min-height: 200px;
+		}
 	}
 
 	&__img {

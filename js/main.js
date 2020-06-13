@@ -267,6 +267,7 @@ $(document).ready(function () {
     autoplaySpeed: 4000,
     pauseOnHover: true,
     dots: true,
+    infinite: true,
     responsive: [
       {
         breakpoint: 1010,
