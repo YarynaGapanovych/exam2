@@ -7,9 +7,6 @@
 
 
   &__block {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
     padding-top: 200px;
   }
 
@@ -42,4 +39,27 @@
     width: 12px;
     height: 12px;
   }
+  
+  @media (max-width: 768px) {
+		.footer {
+    
+      &__block {
+        padding-top: 355px;
+        padding-bottom: 120px;
+      }
+
+      &__text {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &__line {
+        display: none;
+    }
+
+    &__copyright {
+      margin-bottom: 15px;
+    }
+  }
+}
 }
